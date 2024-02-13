@@ -1,13 +1,122 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+  transition: 0.01s;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#barro {
+  background: rgba(30, 51, 62, 0.2);
+  /* backdrop-filter: blur(50px); */
+}
+
+.anim-nav {
+  backdrop-filter: blur(30px);
+}
+
+/* #floaty-bar {
+  background: rgba(255, 255, 255, 0.5);
+} */
+
+#option::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: rgb(14, 165, 233);
+  border-radius: 50%;
+  opacity: 0;
+  margin: 0 auto;
+}
+#option:hover::after {
+  opacity: 1;
+}
+
+/* #section1 {
+  background: rgba(11, 17, 32);
+  backdrop-filter: blur(20px);
+} */
+
+.bulbe {
+  box-shadow: 0 0 80px 80px #f844aa;
+}
+#bulbe1 {
+  box-shadow: 0 0 80px 80px #0ea5e9;
+}
+
+/* .move1{
+  animation: move infinite 1s linear;
+} */
+#card-service {
+  transition: 0.25s ease-in-out;
+}
+#card-service:hover {
+  transform: scale(1.02);
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #0ea5e9 #ddd;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom right, #0ea5e9 0%, #1a56ff 100%);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #0ea5e9;
+  border-radius: 20px;
+  /* color: #4c1d49; */
+}
+
+/* *************************************** */
+
+#moda-menu {
+  background: #0ea5e9;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(15, 23, 42) 0%,
+    rgba(15, 23, 42, 0.393) 30%,
+    rgba(15, 23, 42, 0.393) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgb(15, 23, 42) 0%,
+    rgb(15, 23, 42) 55%,
+    #0b1120d8 100%
+  );
+}
+
+@keyframes move {
+  0% {
+    transform: translate(10px, 20px);
+  }
+  50% {
+    transform: translate(15px, 40px);
+  }
+  90% {
+    transform: translate(7px, 20px);
+  }
+  100% {
+    transform: translate(10px, 20px);
+  }
 }
