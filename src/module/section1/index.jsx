@@ -1,6 +1,9 @@
 import logo_fongo from "../../assets/logo.svg";
 import ordi from "../../assets/ordi.png";
 import show_puce from "../../assets/show_puce.svg";
+import statistic from "../../assets/Statistique-removebg-preview.png";
+import student from "../../assets/student-removebg-preview.png";
+import annee from "../../assets/Annee-removebg-preview.png";
 import { Fade } from "react-awesome-reveal";
 
 const Section1 = () => {
@@ -93,7 +96,9 @@ const Section1 = () => {
         {/* box1 */}
         <div className=" w-[35%]   flex flex-col justify-center items-center   gap-2 md:justify-end md:px-8 md:flex-row md:gap-4">
           <Fade direction="left">
-            <div className="h-8 w-8 bg-filter_white rounded-md"></div>
+            <div className="h-8 w-8 flex justify-center items-center bg-[rgba(246,0,172,0.1)]  rounded-md lg:h-16 lg:w-16 ">
+              <img className="w-full h-auto" src={student} alt="" />
+            </div>
           </Fade>
           {/* text */}
           <div className="w-full flex flex-col justify-center items-center md:items-start  md:w-[70%]">
@@ -113,11 +118,13 @@ const Section1 = () => {
         {/* box2 */}
         <div className="w-[35%]  p-1 flex flex-col  justify-center items-center border-r-2 border-l-2 border-filter_white  gap-2 md:border-r-4 md:border-l-4 md:gap-4 md:px-8 md:flex-row  md:w-[70%]">
           {/* wrapp & text */}
-          <div className=" flex flex-col justify-center items-center gap-2 md:flex-row md:gap-6">
+          <div className=" flex flex-col justify-center items-center gap-2 md:flex-row md:gap-10">
             {/* Icon */}
             <div className="w-[20%]">
               <Fade direction="up" childClassName=" -ml-2 md:ml-0">
-                <div className="h-8 w-8 bg-filter_white rounded-md"></div>
+                <div className="h-8 w-8 bg-[rgba(246,0,172,0.1)] rounded-md lg:h-16 lg:w-16">
+                  <img className="w-full h-auto" src={statistic} alt="" />
+                </div>
               </Fade>
             </div>
             <div className="w-full  flex flex-col justify-center items-center md:items-start  ">
@@ -139,7 +146,9 @@ const Section1 = () => {
         <div className="w-[35%]  flex flex-col justify-end items-center  gap-2 md:px-8 md:flex-row">
           {/* text */}
           <Fade direction="right">
-            <div className="h-8 w-8 bg-filter_white rounded-md"></div>
+            <div className="h-8 w-8 bg-[rgba(246,0,172,0.1)] rounded-md lg:h-16 lg:w-16">
+              <img className="w-full h-auto" src={annee} alt="" />
+            </div>
           </Fade>
           <div className="w-full flex flex-col justify-center items-center md:items-start md:w-[70%]">
             <Fade direction="right">

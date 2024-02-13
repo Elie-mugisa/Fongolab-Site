@@ -4,6 +4,7 @@ const Tech = ({
   titre = "",
   para = "",
   span_para = "",
+  path = "",
 }) => {
   return (
     <div>
@@ -11,7 +12,9 @@ const Tech = ({
         {/* wrapp-icon */}
         <div className="my-auto flex-shrink  ">
           {/* icon */}
-          <div className="h-6 w-6 rounded-lg bg-slate-600 lg:h-10 lg:w-10"></div>
+          <div className="h-6 w-6 border-[0.2px] border-opacity-45 border-prim flex justify-center items-center rounded-lg bg-main lg:h-10 lg:w-10">
+            <img src={path} alt="" />
+          </div>
         </div>
 
         {/* text */}

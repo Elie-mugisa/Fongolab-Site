@@ -1,7 +1,7 @@
 const Input = ({ className = "", titre = "", display = "" }) => {
   return (
     <div
-      className={`w-full p-1 rounded-lg flex justify-between shadow-md bg-white  md:w-full ${display}`}
+      className={`w-full p-1   rounded-lg flex justify-between items-center shadow-md bg-white md:w-[70%] lg:w-full ${display}`}
     >
       <input
         className={`placeholder:text-xs py-1 px-2  bg-transparent border-none outline-0 outline-prim   ${className}`}

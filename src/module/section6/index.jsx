@@ -2,6 +2,10 @@ import Tech from "../../components/cards/technologies/tech";
 import Progress_b_Tools from "../../components/progress-barr";
 import Btn from "../../components/button/index";
 import { Fade } from "react-awesome-reveal";
+import pic_ui from "../../assets/ui-removebg-preview.png";
+import pic_server from "../../assets/server-removebg-preview.png";
+import pic_api from "../../assets/Api-removebg-preview.png";
+import pic_modelisation from "../../assets/modelisation-removebg-preview.png";
 
 const Section6 = () => {
   return (
@@ -11,16 +15,13 @@ const Section6 = () => {
         <div className=" px-10 flex flex-col gap-12 lg:px-20">
           <Fade direction="up">
             <h1 className="text-center text-white text-2xl font-bold lg:text-start lg:text-4xl">
-              En nous rejoignant, vous serez à mesure de bien vous en sortir sur
-              les grandes lignes suivantes de du Developement
+              Gagnez le temps, Devenez un des notre!
             </h1>
           </Fade>
           <Fade direction="up">
             <p className="text-center text-white text-xs text-opacity-50 font-thin lg:text-start">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
-              eveniet sit nam similique sed ipsam modi illo, nisi nostrum
-              deserunt corporis, quod earum nulla id provident. Culpa voluptatum
-              illum voluptatibus.
+              En nous rejoignant, vous serez à mesure de bien vous en sortir sur
+              les grandes lignes suivantes du Developement
             </p>
           </Fade>
         </div>
@@ -34,6 +35,7 @@ const Section6 = () => {
               titre="Developement"
               para="Module pour"
               span_para="Le Front-End"
+              path={pic_ui}
             />
           </Fade>
           <Fade direction="up">
@@ -42,6 +44,7 @@ const Section6 = () => {
               titre="Developement"
               para="Module pour la partie"
               span_para="Back-End"
+              path={pic_server}
             />
           </Fade>
           <Fade direction="up">
@@ -50,21 +53,23 @@ const Section6 = () => {
               titre="Developement"
               para="Module la conception des"
               span_para="APIs"
+              path={pic_api}
             />
           </Fade>
           <Fade direction="up">
             <Tech
-              span="Modélization"
+              span="Modélisation"
               titre="Developement"
               para="Module la conception et l'implementation de la"
               span_para="Base de Donnée"
+              path={pic_modelisation}
             />
           </Fade>
         </div>
       </div>
 
       {/* descri tech */}
-      <div className="w-full py-8  p-4 flex flex-col items-start md:h-[50vh] lg:h-screen lg:w-1/2  lg:p-8">
+      <div className="w-full py-8  p-4 flex flex-col items-start md:h-[70vh] lg:h-screen lg:w-1/2  lg:p-8">
         {/* progress-bar */}
         {/* wrapp */}
         <div className="h-[70vh] mb-32  w-20  flex justify-start gap-[8rem] items-center flex-col relative lg:mb-1 lg:h-[55vh] lg:gap-[5rem] ">
@@ -77,26 +82,20 @@ const Section6 = () => {
           {/* icon */}
           <Fade direction="up">
             <Progress_b_Tools
-              titre="Developpement Web"
-              descri="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas obcaecati similique quibusdam porro omnis ullam nobis nihil dolores deserunt, nesciunt, ea adipisci. Provident quia natus fugiat. Sit laboriosam distinctio officiis."
+              titre="Développement Web"
+              descri="Le développement web consiste à créer des sites web ou des applications web en utilisant des langages de programmation, des technologies et des frameworks pour concevoir, développer et déployer des solutions interactives accessibles via un navigateur web."
             />
           </Fade>
           <Fade direction="up">
             <Progress_b_Tools
-              titre="Developpement Mobile"
-              descri="Aprenez Le Css3 dans Quelques jours, soyez maitre des creation sit amet consectetur adipisicing elit. Unde
-            perspiciatis ea voluptates cumque at iure esse in architecto placeat
-            consequatur consectetur voluptatibus, eveniet reiciendis enim
-            dolores sint quibusdam! Velit, iste."
+              titre="Développement Mobile"
+              descri="Le développement mobile consiste à créer des applications spécifiquement conçues pour les appareils mobiles tels que les smartphones et les tablettes, en utilisant des langages de programmation et des frameworks adaptés pour offrir une expérience utilisateur optimale sur ces plateformes."
             />
           </Fade>
           <Fade direction="up">
             <Progress_b_Tools
-              titre="Developpement Desk-Top"
-              descri="Aprenez la nouvelle version de Javacript proposée dans notre module sit amet consectetur adipisicing elit. Unde
-            perspiciatis ea voluptates cumque at iure esse in architecto placeat
-            consequatur consectetur voluptatibus, eveniet reiciendis enim
-            dolores sint quibusdam! Velit, iste."
+              titre="Développement Desk-Top"
+              descri="Le développement desktop consiste à créer des applications logicielles conçues pour être utilisées sur des ordinateurs de bureau ou des ordinateurs portables, en utilisant des langages de programmation adaptés pour fonctionner sur les systèmes d'exploitation Windows, macOS ou Linux."
             />
           </Fade>
         </div>
@@ -104,14 +103,12 @@ const Section6 = () => {
         {/* Team */}
         <div className="p-2  w-full flex flex-col gap-4 items-start ">
           <Fade direction="up">
-            <p className=" text-xs text-prim ">Join Our Team</p>
+            <p className=" text-xs text-prim ">Faire partie de notre équipe</p>
           </Fade>
           <Fade direction="up">
             <p className="text-xs text-white opacity-50 font-thin">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sint
-              iure id similique accusantium voluptate. Rem exercitationem porro
-              quae culpa aperiam similique, accusamus dolor laboriosam quia,
-              officia amet tenetur eos?
+              Rejoignez notre équipe de développeurs pour repousser les limites
+              de l'innovation et transformer ensemble le futur numérique !
             </p>
           </Fade>
 

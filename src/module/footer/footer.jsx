@@ -1,11 +1,17 @@
 import { Fade } from "react-awesome-reveal";
 import Input from "../../components/input";
+import facebook from "../../assets/facebook.svg";
+import instagram from "../../assets/instagram.svg";
+import whatsapp from "../../assets/whatsapp.svg";
+import linkedin from "../../assets/linkedin.svg";
+import phone from "../../assets/phone.svg";
+import twitter from "../../assets/twitter.svg";
 
 const Footer = () => {
   return (
     <div
       id="Contact"
-      className="bg-slate-950 flex flex-col py-10 px-4 lg:px-20 lg:flex-row"
+      className="relative bg-slate-950 flex flex-col py-10 px-4 lg:px-20 lg:flex-row"
     >
       <div className="w-full lg:w-1/2">
         {/* avatar */}
@@ -19,11 +25,14 @@ const Footer = () => {
             <Fade direction="up">
               <h2 className="text-white text-sm font-bold">Gray Salonga</h2>
             </Fade>
-            <p className="text-[0.60rem] font-thin text-prim">Co-Founder</p>
+            <p className="text-[0.60rem]  text-prim">Co-Founder</p>
             <Fade direction="up">
-              <p className="text-[0.65rem] text-center pt-2 text-white font-thin text-opacity-50 lg:text-start lg:text-xs">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
-                quo voluptatum labore hic saepe.
+              <p className="text-[0.65rem] text-center pt-2 text-white  text-opacity-50 lg:text-start lg:text-xs">
+                L'initiateur et co-fondateur du club fongolab <br />
+                Ceo chez{" "}
+                <a className="text-prim ml-2 " href="https://skynet-burundi.bi">
+                  SkyNet Burundi
+                </a>
               </p>
             </Fade>
           </div>
@@ -96,21 +105,25 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               {/* Icon */}
               <Fade direction="up">
-                <div className="h-8 w-8 rounded-full bg-slate-800"></div>
+                <div className="h-8 w-8 flex justify-center items-center  rounded-full ">
+                  <img src={facebook} alt="" />
+                </div>
                 {/* Text */}
                 <div>
-                  <p className="text-xs font-thin text-white">Facebook</p>
+                  <p className="text-xs font-thin text-white">fongolab</p>
                 </div>
               </Fade>
             </div>
-            {/* Tweeter */}
+            {/* Twitter */}
             <div className="flex items-center gap-2">
               {/* Icon */}
               <Fade direction="up">
-                <div className="h-8 w-8 rounded-full bg-slate-800"></div>
+                <div className="h-8 w-8 flex justify-center items-center  rounded-full ">
+                  <img src={twitter} alt="" />
+                </div>
                 {/* Text */}
                 <div>
-                  <p className="text-xs font-thin text-white">Tweeter</p>
+                  <p className="text-xs font-thin text-white">fongolab</p>
                 </div>
               </Fade>
             </div>
@@ -118,10 +131,14 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               {/* Icon */}
               <Fade direction="up">
-                <div className="h-8 w-8 rounded-full bg-slate-800"></div>
+                <div className="h-8 w-8 flex justify-center items-center  rounded-full ">
+                  <img src={whatsapp} alt="" />
+                </div>
                 {/* Text */}
                 <div>
-                  <p className="text-xs font-thin text-white">WhatsApp</p>
+                  <p className="text-xs font-thin text-white">
+                    +257 66 319 534
+                  </p>
                 </div>
               </Fade>
             </div>
@@ -129,11 +146,13 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               {/* Icon */}
               <Fade direction="up">
-                <div className="h-8 w-8 rounded-full bg-slate-800"></div>
+                <div className="h-8 w-8 flex justify-center items-center  rounded-full ">
+                  <img src={phone} alt="" />
+                </div>
                 {/* Text */}
                 <div>
                   <p className="text-xs font-thin text-white">
-                    +257 11 22 33 44
+                    +257 79 882 175 / 66 319 534
                   </p>
                 </div>
               </Fade>
@@ -142,10 +161,12 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               {/* Icon */}
               <Fade direction="up">
-                <div className="h-8 w-8 rounded-full bg-slate-800"></div>
+                <div className="h-8 w-8 flex justify-center items-center  rounded-full ">
+                  <img src={linkedin} alt="" />
+                </div>
                 {/* Text */}
                 <div>
-                  <p className="text-xs font-thin text-white">Linkedin</p>
+                  <p className="text-xs font-thin text-white">fongolab</p>
                 </div>
               </Fade>
             </div>
@@ -153,14 +174,19 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               {/* Icon */}
               <Fade direction="up">
-                <div className="h-8 w-8 rounded-full bg-slate-800"></div>
+                <div className="h-8 w-8 flex justify-center items-center  rounded-full ">
+                  <img src={instagram} alt="" />
+                </div>
                 {/* Text */}
                 <div>
-                  <p className="text-xs font-thin text-white">Instagram</p>
+                  <p className="text-xs font-thin text-white">fongolab</p>
                 </div>
               </Fade>
             </div>
           </div>
+        </div>
+        <div className="w-full pt-4 pb-1  text-xs text-second text-center flex justify-center items-center absolute bottom-0 left-0  md:py-3">
+          &copy; 2024 Fongolab. Tous droits réservés.
         </div>
       </div>
 
@@ -181,7 +207,10 @@ const Footer = () => {
         </Fade>
         {/* Input */}
         <Fade direction="up">
-          <Input display="flex  mt-4 lg:hidden" titre="Envoyer" />
+          <Input
+            display="flex mt-2 md:items-center md:translate-x-[20%] lg:hidden md:translate-y-14"
+            titre="Envoyer"
+          />
         </Fade>
       </div>
     </div>
