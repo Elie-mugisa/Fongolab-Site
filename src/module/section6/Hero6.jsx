@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Hero6 = () => {
   return (
-    <div className="overflow-hidden ">
+    <div className="overflow-hidden relative h-[200vh] md:h-[110vh] lg:h-screen  ">
       <div className="">
         <Fade direction="left" duration={3000}>
           <Bulbe className=" translate-x-[20rem] translate-y-[30rem] h-8 w-8 bg-second opacity-20 md:translate-x-[30rem] lg:translate-x-[10rem]" />

@@ -7,13 +7,16 @@ const Section2 = () => {
   return (
     <div
       id=" section section2"
-      className="px-6 w-full py-10 absolute top-0 left-0 flex justify-center items-center flex-col gap-6 md:px-10 lg:px-44"
+      className="px-6 w-full   py-10 absolute top-0 left-0 flex justify-center items-center flex-col gap-6 md:px-10 lg:px-44"
     >
-      <div className="w-full  flex flex-col gap-4  md:flex-row  ">
+      <div
+        className="w-full   flex flex-col gap-10
+        md:flex-row  "
+      >
         {/* Text */}
-        <div className="w-full  px-6  flex flex-col justify-center items-center py-8 gap-8 md:py-0 md:items-start  md:w-1/2">
+        <div className="w-full h-[60vh]   px-6  flex flex-col justify-center items-center  gap-4 md:py-0 md:gap-8 md:items-start md:h-[40vh] md:w-1/2 lg:h-screen">
           {/* List */}
-          <div className=" mb-4 flex flex-col gap-4 md:mb-10">
+          <div className=" mb-4 flex flex-col gap-4 lg:mb-10">
             {/* Item1 */}
             <div className="flex gap-4 justify-start items-center">
               <Fade direction="up">
@@ -69,7 +72,7 @@ const Section2 = () => {
         </div>
 
         {/* image */}
-        <div className="w-full pl-16  relative flex justify-center items-center image p-2 md:justify-end md:w-1/2 md:pl-1">
+        <div className="w-full h-[50vh]  pl-16  relative flex justify-center items-center image p-2 md:justify-end md:w-1/2 md:pl-1 lg:h-screen">
           <Fade direction="up">
             <img className="" src={onBoard} alt="" />
           </Fade>
@@ -77,7 +80,7 @@ const Section2 = () => {
             <img
               src={mob_screen}
               alt=""
-              className="absolute -top-5 -left-16 lg:top-32 lg:-left-20 lg:-right-44"
+              className="absolute top-5 -left-16 lg:top-32 lg:-left-20 lg:-right-44"
             />
           </Fade>
         </div>

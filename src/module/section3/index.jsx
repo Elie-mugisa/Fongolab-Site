@@ -7,7 +7,7 @@ const Wrapp_card = () => {
   return (
     <div
       id="Apropos"
-      className="py-2 mt-28 grid grid-cols-2 px-6 gap-x-2  md:px-20 gap-6 md:grid-cols-3 lg:py-10"
+      className="py-12 pt-20  mt-[100%] grid grid-cols-2 px-6 gap-x-2  md:px-20 gap-6 md:mt-0  md:grid-cols-3 lg:py-10"
     >
       {/* Text-service-header */}
       <Fade direction="up">

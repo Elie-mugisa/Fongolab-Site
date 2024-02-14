@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Bg_Hero2 = () => {
   return (
-    <div className=" h-screen  flex  relative md:h-[50vh] lg:h-[85vh]">
+    <div className=" h-[60vh]  flex  relative md:h-[50vh] lg:h-[85vh]">
       <Fade duration={3000} direction="left">
         <Bulbe
           id="bulbe1"

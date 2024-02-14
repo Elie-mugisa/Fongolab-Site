@@ -198,7 +198,7 @@ const Footer = () => {
               className="rounded-lg"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15932.043121600575!2d29.3863171!3d-3.3474796!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c183ccad02b6bf%3A0x7a12d7b1563b68fc!2sHope%20Africa%20University!5e0!3m2!1sen!2sbi!4v1707816621137!5m2!1sen!2sbi"
               width="600"
-              height="320"
+              height="300"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"

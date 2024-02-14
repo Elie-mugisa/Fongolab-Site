@@ -94,12 +94,12 @@ const Navigation = () => {
         onClick={() => {
           setIsMobileMenu((e) => !e);
         }}
-        className=" p-2 cursor-pointer hambourg md:hidden"
+        className=" p-2  cursor-pointer hambourg md:hidden"
       >
         <span
           className={`${
-            isMobileMenu ? "-rotate-45 translate-y-[0.45rem]  " : ""
-          } block w-[30px] rounded-xl h-[3px] bg-prim mb-[0.40rem] `}
+            isMobileMenu ? "-rotate-45  translate-y-[0.45rem]  " : ""
+          } block w-[30px] transition rounded-xl h-[3px] bg-prim mb-[0.40rem] `}
         ></span>
         <span
           className={`${
@@ -117,8 +117,8 @@ const Navigation = () => {
       <div
         id="moda-menu"
         className={`${
-          isMobileMenu ? "flex translate-y-0" : "hidden "
-        } duration-500  absolute -translate-y-4  flex-col justify-center items-center top-[3.25rem]  right-0 w-full h-[35vh] py-6`}
+          isMobileMenu ? " opacity-100  " : "opacity-0 pointer-events-none  "
+        } duration-500  absolute top-[3.3rem] flex  flex-col justify-center items-center  right-0 w-full h-[40vh] py-6`}
       >
         <div className="space-y-4 w-full h-full flex justify-center items-center flex-col absolute top-0 left-0 gap-4 ">
           <ul className="text-center text-white space-y-4">
@@ -136,7 +136,9 @@ const Navigation = () => {
             </li>
           </ul>
           {/* Btn */}
-          <Btn className="bg-main text-white" titre="Devenez member" />
+          <a href="https://tally.so/r/woMM2b">
+            <Btn className="bg-main text-white" titre="Devenez member" />
+          </a>
         </div>
       </div>
     </nav>

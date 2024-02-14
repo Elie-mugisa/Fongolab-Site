@@ -9,10 +9,10 @@ import pic_modelisation from "../../assets/modelisation-removebg-preview.png";
 
 const Section6 = () => {
   return (
-    <div className="flex flex-col py-6 bg-slate-950 gap-4  bg-opacity-30 justify-center items-center lg:py-1 lg:flex-row -mt-40 lg:-mt-52">
-      <div className=" flex flex-col justify-evenly gap-8 w-full h-screen md:h-[50vh] lg:h-screen lg:w-1/2 ">
+    <div className="absolute bg-slate-950 w-full h-full top-0 left-0  flex flex-col px-4 py-0  gap-x-4  bg-opacity-30 justify-center items-center lg:h-screen  lg:flex-row lg:py-6 ">
+      <div className="flex flex-grow   flex-col justify-evenly gap-4 w-full   md:gap-6 lg:h-screen lg:w-1/2 ">
         {/* header */}
-        <div className=" px-10 flex flex-col gap-12 lg:px-20">
+        <div className=" px-10 flex flex-col gap-4 lg:px-20">
           <Fade direction="up">
             <h1 className="text-center text-white text-2xl font-bold lg:text-start lg:text-4xl">
               Gagnez le temps, Devenez un des notre!
@@ -69,39 +69,38 @@ const Section6 = () => {
       </div>
 
       {/* descri tech */}
-      <div className="w-full py-8  p-4 flex flex-col items-start md:h-[70vh] lg:h-screen lg:w-1/2  lg:p-8">
+      <div className="w-full flex-grow    py-4  p-4 flex flex-col items-start   lg:h-screen lg:w-1/2  lg:p-8">
         {/* progress-bar */}
         {/* wrapp */}
-        <div className="h-[70vh] mb-32  w-20  flex justify-start gap-[8rem] items-center flex-col relative lg:mb-1 lg:h-[55vh] lg:gap-[5rem] ">
-          {/* LINE */}
-          <div className="absolute right-[47.5%] top-0 bg-slate-800 h-[50vh] w-1 rounded-xl md:h-[30vh] lg:h-[50vh]"></div>
-          {/* <div className="absolute  right-[47.5%] bottom-[4.5rem] bg-slate-800 h-1 w-1 rounded-full"></div>
-          <div className="absolute  right-[47.5%] bottom-[5rem] bg-slate-800 h-1 w-1 rounded-full"></div>
-          <div className="absolute  right-[47.5%] bottom-[5.5rem] bg-slate-800 h-1 w-1 rounded-full"></div> */}
+        <div className=" flex flex-col justify-start items-start h-full w-full p-4">
+          <div className="h-[70%] bg p-4 -ml-8 gap-[8rem]  w-20  flex justify-start  items-center flex-col relative md:pl-0 md:gap-[6.5rem] lg:mb-1 lg:h-[55vh] lg:gap-[5rem] ">
+            {/* LINE */}
+            <div className="absolute right-[47.5%] top-0 bg-slate-800 h-full  w-1 rounded-xl lg:h-[50vh]"></div>
 
-          {/* icon */}
-          <Fade direction="up">
-            <Progress_b_Tools
-              titre="Développement Web"
-              descri="Le développement web consiste à créer des sites web ou des applications web en utilisant des langages de programmation, des technologies et des frameworks pour concevoir, développer et déployer des solutions interactives accessibles via un navigateur web."
-            />
-          </Fade>
-          <Fade direction="up">
-            <Progress_b_Tools
-              titre="Développement Mobile"
-              descri="Le développement mobile consiste à créer des applications spécifiquement conçues pour les appareils mobiles tels que les smartphones et les tablettes, en utilisant des langages de programmation et des frameworks adaptés pour offrir une expérience utilisateur optimale sur ces plateformes."
-            />
-          </Fade>
-          <Fade direction="up">
-            <Progress_b_Tools
-              titre="Développement Desk-Top"
-              descri="Le développement desktop consiste à créer des applications logicielles conçues pour être utilisées sur des ordinateurs de bureau ou des ordinateurs portables, en utilisant des langages de programmation adaptés pour fonctionner sur les systèmes d'exploitation Windows, macOS ou Linux."
-            />
-          </Fade>
+            {/* icon */}
+            <Fade direction="up">
+              <Progress_b_Tools
+                titre="Développement Web"
+                descri="Le développement web consiste à créer des sites web ou des applications web en utilisant des langages de programmation, des technologies et des frameworks pour concevoir, développer et déployer des solutions interactives accessibles via un navigateur web."
+              />
+            </Fade>
+            <Fade direction="up">
+              <Progress_b_Tools
+                titre="Développement Mobile"
+                descri="Le développement mobile consiste à créer des applications spécifiquement conçues pour les appareils mobiles tels que les smartphones et les tablettes, en utilisant des langages de programmation et des frameworks adaptés pour offrir une expérience utilisateur optimale sur ces plateformes."
+              />
+            </Fade>
+            <Fade direction="up">
+              <Progress_b_Tools
+                titre="Développement Desk-Top"
+                descri="Le développement desktop consiste à créer des applications logicielles conçues pour être utilisées sur des ordinateurs de bureau ou des ordinateurs portables, en utilisant des langages de programmation adaptés pour fonctionner sur les systèmes d'exploitation Windows, macOS ou Linux."
+              />
+            </Fade>
+          </div>
         </div>
 
         {/* Team */}
-        <div className="p-2  w-full flex flex-col gap-4 items-start ">
+        <div className="py-2 px-6   w-full flex flex-shrink flex-col gap-1 items-start ">
           <Fade direction="up">
             <p className=" text-xs text-prim ">Faire partie de notre équipe</p>
           </Fade>
