@@ -190,7 +190,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full h-[50vh] p-1  lg:w-1/2">
+      <div className="w-full h-[60vh] p-1 md:h[50%]  lg:w-1/2">
         {/* iframe */}
         <Fade direction="right">
           <div className="text-xl flex justify-center items-center lg:h-full">

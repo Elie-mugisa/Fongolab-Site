@@ -69,13 +69,13 @@ const Section6 = () => {
       </div>
 
       {/* descri tech */}
-      <div className="w-full flex-grow    py-4  p-4 flex flex-col items-start   lg:h-screen lg:w-1/2  lg:p-8">
+      <div className="w-full flex-grow    py-4   flex flex-col items-start gap-y-10  lg:h-screen lg:w-1/2  md:p-8">
         {/* progress-bar */}
         {/* wrapp */}
-        <div className=" flex flex-col justify-start items-start h-full w-full p-4">
-          <div className="h-[70%] bg p-4 -ml-8 gap-[8rem]  w-20  flex justify-start  items-center flex-col relative md:pl-0 md:gap-[6.5rem] lg:mb-1 lg:h-[55vh] lg:gap-[5rem] ">
+        <div className=" flex  flex-col justify-start items-start h-full w-full p-4">
+          <div className="h-[95%]  bg p-4 -ml-8 gap-[8rem]  w-20  flex justify-start  items-center flex-col relative md:pl-0 md:gap-[6.5rem] lg:mb-1 lg:h-[55vh]  lg:gap-[5rem] ">
             {/* LINE */}
-            <div className="absolute right-[47.5%] top-0 bg-slate-800 h-full  w-1 rounded-xl lg:h-[50vh]"></div>
+            <div className="absolute right-[47.5%] top-0 bg-slate-800 h-full  w-1 rounded-xl lg:h-[50vh] md:right-[56%]"></div>
 
             {/* icon */}
             <Fade direction="up">
@@ -100,7 +100,7 @@ const Section6 = () => {
         </div>
 
         {/* Team */}
-        <div className="py-2 px-6   w-full flex flex-shrink flex-col gap-1 items-start ">
+        <div className="py-2 px-0 bg-filter_main2  w-full flex flex-shrink flex-col gap-1 items-start md:px-6 ">
           <Fade direction="up">
             <p className=" text-xs text-prim ">Faire partie de notre équipe</p>
           </Fade>
@@ -113,43 +113,43 @@ const Section6 = () => {
 
           <div className="flex flex-wrap gap-2 py-4">
             <Fade direction="right">
-              <div className="h-8 w-8 flex justify-center items-center border border-prim rounded-full bg-slate-700">
+              <div className="h-6 w-6 flex justify-center items-center border border-prim rounded-full bg-slate-700 md:h-8 md:w-8">
                 D
               </div>
             </Fade>
 
             <Fade direction="right">
-              <div className="h-8 w-8 flex justify-center items-center border border-prim rounded-full bg-slate-700">
+              <div className="h-6 w-6 flex justify-center items-center border border-prim rounded-full bg-slate-700 md:h-8 md:w-8">
                 C
               </div>
             </Fade>
             <Fade direction="right">
-              <div className="h-8 w-8 flex justify-center items-center border border-prim rounded-full bg-slate-700">
+              <div className="h-6 w-6 flex justify-center items-center border border-prim rounded-full bg-slate-700 md:h-8 md:w-8">
                 L
               </div>
             </Fade>
             <Fade direction="right">
-              <div className="h-8 w-8 flex justify-center items-center border border-prim rounded-full bg-slate-700">
+              <div className="h-6 w-6 flex justify-center items-center border border-prim rounded-full bg-slate-700 md:h-8 md:w-8">
                 V
               </div>
             </Fade>
             <Fade direction="rigth">
-              <div className="h-8 w-8 flex justify-center items-center border border-prim rounded-full bg-slate-700">
+              <div className="h-6 w-6 flex justify-center items-center border border-prim rounded-full bg-slate-700 md:h-8 md:w-8">
                 J
               </div>
             </Fade>
             <Fade direction="rigth">
-              <div className="h-8 w-8 flex justify-center items-center border border-prim rounded-full bg-slate-700">
+              <div className="h-6 w-6 flex justify-center items-center border border-prim rounded-full bg-slate-700 md:h-8 md:w-8">
                 A
               </div>
             </Fade>
             <Fade direction="rigth">
-              <div className="h-8 w-8 flex justify-center items-center border border-prim rounded-full bg-slate-700">
+              <div className="h-6 w-6 flex justify-center items-center border border-prim rounded-full bg-slate-700 md:h-8 md:w-8">
                 E
               </div>
             </Fade>
             <Fade direction="rigth">
-              <div className="h-8 w-8 text-xl font-bold flex justify-center items-center border border-prim rounded-full bg-main">
+              <div className="h-6 w-6 text-xl font-bold flex justify-center items-center border border-prim rounded-full bg-main md:h-8 md:w-8">
                 <p className="text-3xl font-[600] text-prim mb-1">+</p>
               </div>
             </Fade>
