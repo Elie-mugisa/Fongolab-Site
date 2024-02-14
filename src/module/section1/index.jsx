@@ -91,7 +91,7 @@ const Section1 = () => {
       {/* done works */}
       <div
         id="barro"
-        className="py-4 px-1 gap-2 absolute bottom-4 text-filter_white  w-[90vw] shadow-lg shadow-main rounded-md flex justify-center items-start md:bottom-8 lg:bottom-28 md:p-8 lg:w-[75vw] lg:items-center"
+        className="py-4 px-1 gap-2 absolute bottom-20 text-filter_white  w-[90vw] shadow-lg shadow-main rounded-md flex justify-center items-start md:bottom-8 lg:bottom-28 md:p-8 lg:w-[75vw] lg:items-center"
       >
         {/* box1 */}
         <div className=" w-[35%]   flex flex-col justify-center items-center   gap-2 md:justify-end md:px-8 md:flex-row md:gap-4">

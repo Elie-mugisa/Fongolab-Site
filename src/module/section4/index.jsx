@@ -5,7 +5,7 @@ import pic2 from "../../assets/pic2.jpg";
 const Section4 = () => {
   return (
     // Trainning SECTION
-    <div className="py-10 bg-slate-950   bg-opacity-30  px-6  -mt-36 bg-main2 flex flex-col justify-center items-center lg:flex-row lg:px-20 lg:py-0 lg:h-[85vh]">
+    <div className="py-10 bg-slate-950   bg-opacity-30  px-6  -mt-36 bg-main2 flex flex-col-reverse  justify-center items-center lg:flex-row lg:px-20 lg:py-0 lg:h-[85vh]">
       {/* Photo Trainer */}
       <div className="w-full  h-[50vh] flex justify-start items-center lg:h-screen lg:w-[60%]">
         <figure className="relative ">
